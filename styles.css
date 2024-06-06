@@ -66,7 +66,10 @@ body[data-theme="Dark"]{
 .all-songs, .song-card, .playlists {
   width: 30%;
   margin-top: 2rem;
-  border: 2px solid black;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* border: 2px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .filter-section{
@@ -88,7 +91,33 @@ body[data-theme="Dark"]{
    font-size: 1rem;
    outline: none;
    transition: border-color 0.2s ease;
+
+
 }
+
+
+.all-container ul{
+  list-style: none;
+}
+
+.all-container li{
+  background-color: #00ADB5;
+  margin-top: 1rem;
+  border-radius: 15px;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.all-container li:hover{
+  /* background-color: rgb(216, 216, 216); */
+  transition: 0.2s  ease;
+  transform: scale(0.98); 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
 /* -----------------All song section end ------------------------- */
 
 
@@ -114,8 +143,7 @@ body[data-theme="Dark"]{
 
 }
 .song-card-subcontainer img{
-  width: 220px;
-  height: 220px;
+  width: 100%;
   
   
 }
@@ -129,13 +157,25 @@ body[data-theme="Dark"]{
 
 .audio-controlls{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .btn{
   font-size: 1.3rem;
+  
   padding: 0.5rem;
   width: 70px;
+  cursor: pointer;
+  background-color: #00ADB5;
+  color: #EEEEEE;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btn:hover{
+  transition: 0.2s  ease;
+  transform: scale(0.98); 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 #prev-song{
@@ -146,10 +186,24 @@ body[data-theme="Dark"]{
   border-top-right-radius:25px;
   border-bottom-right-radius:25px;
 
+
 }
 
 .playlist-btn{
   font-size: 1.3rem;
   padding: 0.5rem;
-  
+  color: #EEEEEE;
+  background-color: #00ADB5;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  border-radius: 35px;
+  width: 100%;
+
+
+}
+.playlist-btn:hover{
+  transition: 0.2s  ease;
+  transform: scale(0.98); 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
