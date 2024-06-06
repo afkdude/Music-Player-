@@ -81,12 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('add-to-playlist').addEventListener('click', addToPlaylist);
   
 
-  showSongs(); //initially displaying list of songs
+  // showSongs(); //initially displaying list of songs
 
   renderCurrentSong();   //initial render of the song card 
 
   
 }); 
+
+showSongs(); 
 
 
 
