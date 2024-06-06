@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Music Player</title>
+</head>
+
+<!-- using custom attrbute to implement the dark theme functionality -->
+<body  data-theme ="Light">
+
+
+  <!-- header section  -->
+
+
+  <div class="header-section">
+
+    <h3>- Shubham Amrawat</h3>
+    <h1>Music Player</h1>
+
+    <button id="toggle-theme"></button>
+
+  </div>
+
+
+  <!-- main container  -->
+
+
+  <div  class="all-container">
+
+    <div class="all-songs">
+
+      <!-- filter  -->
+
+      <div class="filter-section">
+        <h4>Filter By Genre</h4>
+        <select name="Filter by Genre" id="genre-filter">
+        
+        <option value="all">all</option>
+        <option value="Pop">Pop</option>
+        <option value="Rock">Rock</option>
+        <option value="Jazz">Jazz</option>
+
+        </select>
+      </div>
+
+      <input type="text" id="search-song" placeholder="Search Song">
+
+      <h2>All Songs</h2>
+      
+      <ul id="song-list"></ul>
+
+    </div>
+
+
+    <div class="song-card">
+
+      <h2>Now Playing</h2>
+
+
+      <div class="song-card-subcontainer">
+
+         <img id="current-song-img" src="images/vecteezy_music-player-vector-icon_19025769-1.jpg"  alt="Song Image">
+         <h3 id="current-song-name">Song Name</h3>
+         <p id="current-song-artist">Artist Name</p>
+
+      </div>
+
+      <audio id="audio-player" controls></audio>
+
+      <div class="audio-controlls">
+
+           <button id="prev-song" class="btn"><=</button>
+           <button id="play-song" class="btn">Play</button>
+           <button id="next-song" class="btn">=></button>
+           
+
+      </div>
+      <button id="add-to-playlist" class="playlist-btn">Add to Playlist</button>
+   
+     
+
+
+    </div>
+
+
+    <div class="playlists"></div>
+
+  </div>
+
+
+
+
+
+
+  
+
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>

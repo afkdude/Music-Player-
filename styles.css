@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0;
+}
+
+/* dark theme and light theme styling  */
+
+body[data-theme="Light"]{
+  background-color: white;
+  color: black;
+}
+
+body[data-theme="Dark"]{
+  background-color:black;
+  color: white;
+}
+
+.header-section{
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #ECECEB;
+  padding: 1.4rem;
+
+
+}
+
+.header-section h1{
+ 
+  color: #07617D;
+}
+
+.header-section h3{
+  color: #2E383F;
+  font-size: 15px;
+}
+
+.header-section h1:hover{
+  color:#FF7F50 ;
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+#toggle-theme{
+  padding: 0.3rem;
+  font-size: 23px;
+  width: 110px;
+  font-weight: bolder;
+  background-color:white;
+  border-radius: 2rem;
+}
+
+
+/* container styling  */
+
+
+/* -------All songs section--------------  */
+.all-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-songs, .song-card, .playlists {
+  width: 30%;
+  margin-top: 2rem;
+  border: 2px solid black;
+}
+
+.filter-section{
+  display: flex;
+  gap: 1rem;
+}
+
+.all-songs{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#search-song{
+  padding: 10px 15px;
+   border: 2px solid #FF7F50;
+   /* border-radius: 15px; */
+   font-size: 1rem;
+   outline: none;
+   transition: border-color 0.2s ease;
+}
+/* -----------------All song section end ------------------------- */
+
+
+
+
+
+/* ---------------------Now playing section ------------------ */
+
+
+.song-card{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.song-card-subcontainer{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  gap: 1rem;
+  padding: 1rem;
+
+}
+.song-card-subcontainer img{
+  width: 220px;
+  height: 220px;
+  
+  
+}
+
+#audio-player{
+  width: 100%;
+  /* border-radius: -5px; */
+  /* border-radius: 100px; */
+  /* filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); */
+}
+
+.audio-controlls{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn{
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  width: 70px;
+}
+
+#prev-song{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#next-song{
+  border-top-right-radius:25px;
+  border-bottom-right-radius:25px;
+
+}
+
+.playlist-btn{
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  
+}
