@@ -12,9 +12,11 @@ body[data-theme="Light"]{
 }
 
 body[data-theme="Dark"]{
-  background-color:black;
+  background-color:#333C4A;
   color: white;
 }
+
+
 
 .header-section{
   display: flex;
@@ -22,7 +24,7 @@ body[data-theme="Dark"]{
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  background-color: #ECECEB;
+  /* background-color: #ffffff; */
   padding: 1.4rem;
 
 
@@ -70,6 +72,8 @@ body[data-theme="Dark"]{
   margin-right: 1rem;
   /* border: 2px solid black; */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  /* background-color: #E0FCFF; */
 }
 
 .filter-section{
@@ -116,6 +120,13 @@ body[data-theme="Dark"]{
   transition: 0.2s  ease;
   transform: scale(0.98); 
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#genre-filter{
+  font-size: 1rem;
+  width: 90px;
+  color: #2E383F;
+  font-weight:bolder;
 }
 
 /* -----------------All song section end ------------------------- */
@@ -171,7 +182,10 @@ body[data-theme="Dark"]{
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+/* .icons{
+  align-items: center;
+  width: 100%;
+} */
 .btn:hover{
   transition: 0.2s  ease;
   transform: scale(0.98); 
@@ -206,4 +220,68 @@ body[data-theme="Dark"]{
   transition: 0.2s  ease;
   transform: scale(0.98); 
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* playlist section  */
+
+
+.playlists{
+  display: flex;
+  flex-direction: column;
+  /* text-align: ; */
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.list-section li{
+  background-color: #FF7F50;
+  text-align: center;
+  /* color:#334443;  */
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.input{
+  padding: 10px 15px;
+   border: 2px solid #00ADB5;
+   /* border-radius: 15px; */
+   font-size: 1rem;
+   outline: none;
+   transition: border-color 0.2s ease;
+
+}
+
+#all-playlist{
+  margin-top: 1rem;
+}
+
+.create-section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#create-playlist{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  background-color: #1C2938;
+  color: #EEEEEE;
+}
+#create-playlist:hover{
+  background-color: #FF7F50;
+  transition: 0.4s ease;
+}
+
+.title-heading{
+  text-align: center;
+  color:#3A4750 ;
+}
+
+#current-playlist-list li{
+  background-color: #C6FFC1;
+  color: black; 
 }

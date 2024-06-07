@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <link rel="stylesheet" href="styles.css">
   <title>Music Player</title>
 </head>
@@ -48,7 +51,7 @@
 
       <input type="text" id="search-song" placeholder="Search Song">
 
-      <h2>All Songs</h2>
+      <h2 class="title-heading"> All Songs</h2>
       
       <ul id="song-list"></ul>
 
@@ -57,7 +60,7 @@
 
     <div class="song-card">
 
-      <h2>Now Playing</h2>
+      <h2 class="title-heading" >Now Playing</h2>
 
 
       <div class="song-card-subcontainer">
@@ -85,7 +88,31 @@
     </div>
 
 
-    <div class="playlists"></div>
+    <div class="playlists">
+
+
+      <div class="create-section">
+
+         <input type="text" id="new-playlist-name" placeholder="Enter Playlist Name" class="input">
+         <button id="create-playlist">Create Playlist</button>
+      </div>
+     
+
+
+      <input type="text" id="search-playlist"  placeholder="Search Playlist" class="input">
+
+
+      <div class="list-section">
+
+             <h2 id="current-playlist" class="title-heading">Current Playlist</h2>
+             <ul id="current-playlist-list"></ul>
+
+             <h2 id="all-playlist" class="title-heading">All playlist</h2>
+             <ul id="all-playlist-list"></ul>
+
+      </div>
+       
+    </div>
 
   </div>
 
